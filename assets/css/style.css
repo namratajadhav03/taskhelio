@@ -1,0 +1,212 @@
+@charset "utf-8";
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Force scrollbar */
+html { overflow-y: scroll; }
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] { vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em { font-style: italic; }
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup { top: -.7em; }
+sub { bottom: -.25em; }
+
+/* 1.2. Clear Fix
+   ========================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+/*for all*/
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a { 
+  display: inline-block;
+  text-decoration: none; 
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+* {
+  background-image: url(assets/images/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  width:65%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 25%;
+  height: auto;
+  position: relative;
+  top:50px;
+  left:35%;
+}
+
+.text-avatar-animation-section {
+  position: relative;
+  top: 15%;
+}
+
+h2 {
+  margin-top: 7%;
+  margin-left: 10%;
+  position: absolute;
+  top:5%;
+  color: red;
+  font-size: 30px;
+  text-transform: capitalize;
+  animation: slide 2s ease 4s forwards;
+  animation-direction: alternate;
+}
+
+.sad-sonali {
+  width: 25%;
+  height: auto;
+  padding-top: 15%;
+  padding-left: 25%;
+  position: absolute;
+  top: 35%;
+  z-index: 1;
+  animation: slidein 2s ease 4s backwards;
+}
+
+.plate {
+  width: 32%;
+  height: auto;
+  padding-left: 11.3%;
+  z-index:1;
+  position: absolute;
+  top: 82%;
+  animation: fadeIn 2s ease-in 2s;
+  animation: slide 20s ease-out forwards;
+}
+
+.table{
+  width: 40%;
+  height: auto;
+  position: absolute;
+  top: 81%;
+  left: 27.6%;
+  z-index: -999;
+  animation: fadeIn 2s ease-in 2s;
+}
+
+.sandwich-making {
+  width: 25%;
+  height: auto;
+  padding-left: 35%;
+  z-index:1;
+  position: absolute;
+  animation: plateslidein 0.5s linear forwards;
+  animation-delay: 7s;
+}
+
+.mayo {
+  width: 25%;
+  height: auto;
+  padding-left: 35%;
+  z-index:1;
+  position: absolute;
+  animation: plateslidein 0.5s linear forwards;
+  animation-delay: 1s
+}
+
+.avatar-2 {
+  width: 25%;
+  height: auto;
+  padding-top: 5%;
+  padding-left: 40%;
+  position: relative;
+  z-index: 1;
+  animation: slideback 3s linear backwards;
+  animation-delay: 10s;
+}
+
+
+
+@keyframes slide {
+  0% { transform: translateX(-500px);}
+  50% {transform: translateX(50px);}
+  100% { transform: translateX(-500px);}
+}
+
+@keyframes slidein {
+  0% { transform: translateX(400px);}
+  50% {transform: translateX(250px);}
+  100% { transform: translateX(400px);}
+}
